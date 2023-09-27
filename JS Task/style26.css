@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffe169, #ff7bfb);
+  padding: 20px;
+  border-radius: 5px;
+  width: 95%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+  
+  h1 {
+    color: rgb(19, 19, 109);
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  form {
+    margin-top: 0;
+    padding-top: 20px; 
+    padding-left: 0px;
+    padding-right: 160px;
+    box-shadow: none;
+  }
+  
+  table {
+    width: 100%;
+  }
+
+  .info{
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+  }
+
+  label{
+    font-weight:lighter;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 27px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ff0000;
+  }
+  
+  .login-link {
+    text-align: right;
+  }
+  
+  .error {
+    color: red;
+    display: none;
+  }
+  
+  .error-message {
+    color: red;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .narrow-select {
+    width: 50%;
+  }
+  

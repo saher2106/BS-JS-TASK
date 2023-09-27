@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 23</title>
+    <style>
+        table{
+            margin-top: 20vh;
+        }
+        .validation-error {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <!-- <input id="numb"> -->
+    
+    
+
+    <table cellpadding="2">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name"></td>
+            <td><p id="n"></p></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" id="email"></td>
+            <td><p id="e"></p></td>
+        </tr>
+        <tr>
+            <td>Website:</td>
+            <td><input type="text" id="website"></td>
+            <td><p id="w"></p></td>
+        </tr>
+        <tr>
+            <td>Message:</td>
+            <td><textarea rows="5" id="message"></textarea></td>
+            <td><p id="m"></p></td>
+        </tr>
+
+        <tr>
+            <td><button type="button" onclick="myFunction()">Submit</button></td>
+        </tr>
+    </table>
+
+</center>
+    <script>
+    function myFunction() {
+
+      let nam=document.getElementById("name").value;
+      var em=document.getElementById("email").value;
+      var web=document.getElementById("website").value;
+      var mes=document.getElementById("message").value;
+      let text1;
+      let text2;
+      let text3;
+      let text4;
+
+      if(nam.length===0){
+        text1="This field is required";
+        document.getElementById("name").style.borderColor = "red";
+        document.getElementById("n").classList.add("validation-error");
+      }
+      document.getElementById("n").textContent = text1;
+
+      if(em.length===0){
+        text2="A valid email address is required";
+        document.getElementById("email").style.borderColor = "red";
+        document.getElementById("e").classList.add("validation-error");
+      }
+      document.getElementById("e").textContent= text2;
+
+      if(web.length===0){
+        text3="A valid URL is required";
+        document.getElementById("website").style.borderColor = "red";
+        document.getElementById("w").classList.add("validation-error");
+      }
+      document.getElementById("w").textContent= text3;
+
+      if(mes.length===0){
+        text4="This field is required";
+        document.getElementById("message").style.borderColor = "red";
+        document.getElementById("message").style.borderWidth = "2px";
+        document.getElementById("m").classList.add("validation-error");
+      }
+      document.getElementById("m").textContent= text4;
+    }
+
+    </script>
+    
+    </body>
+</html>
